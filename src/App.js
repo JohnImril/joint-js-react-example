@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import JointLayer from "./components/JointLayer/JointLayer";
+import Graph from "./components/Graph/Graph";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <header className="app-header">Hello</header>
+      <h1>Class Component</h1>
+      <Graph />
+
+      <h1>Functional Component</h1>
+      <JointLayer />
     </div>
   );
-}
+};
 
 export default App;
