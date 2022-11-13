@@ -2,7 +2,7 @@
 
 ![example](https://github.com/JohnImril/joint-js-react-example/raw/master/public/images/example.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project shows a combination of CRA and JointJS framework using primitives as an example.
 
 ## Available Scripts
 
