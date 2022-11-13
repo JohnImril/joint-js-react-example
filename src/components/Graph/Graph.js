@@ -9,12 +9,12 @@ class Graph extends React.Component {
       el: document.getElementById("canvas"),
       model: graph,
       width: 1920,
-      height: 800,
+      height: 400,
       gridSize: 1,
     });
 
     const rect = new shapes.standard.Rectangle();
-    rect.position(100, 30);
+    rect.position(600, 30);
     rect.resize(100, 40);
     rect.attr({
       body: {

@@ -4,9 +4,43 @@ import { dia, shapes } from "jointjs";
 function JointLayer() {
   const canvas = useRef(null);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const graph = new dia.Graph();
 
-  return <div className="canvas" ref={canvas} />;
+    const paper = new dia.Paper({
+      el: document.getElementsByClassName("canvas-functional"),
+      model: graph,
+      width: 1920,
+      height: 500,
+      gridSize: 1,
+    });
+
+    const rect = new shapes.standard.Rectangle();
+    rect.position(600, 30);
+    rect.resize(100, 40);
+    rect.attr({
+      body: {
+        fill: "#7109AA",
+      },
+      label: {
+        text: "Hello",
+        fill: "white",
+      },
+    });
+    rect.addTo(graph);
+
+    const rect2 = rect.clone();
+    rect2.translate(300, 0);
+    rect2.attr("label/text", "World!");
+    rect2.addTo(graph);
+
+    const link = new shapes.standard.Link();
+    link.target(rect);
+    link.source(rect2);
+    link.addTo(graph);
+  }, []);
+
+  return <div className="canvas-functional" ref={canvas} />;
 }
 
 export default JointLayer;

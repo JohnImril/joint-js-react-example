@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Getting Started Joint JS with Create React App
+
+![example](https://github.com/JohnImril/joint-js-react-example/raw/master/public/images/example.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
