@@ -1,0 +1,10 @@
+.button {
+  position: absolute;
+  left: 20px;
+  top: 500px;
+  height: 40px;
+  width: 100px;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  border-radius: 5px;
+}
